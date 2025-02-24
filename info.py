@@ -18,18 +18,18 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
+API_ID = int(environ.get('API_ID', '20111114'))
+API_HASH = environ.get('API_HASH', '30d45e7b5a029d51851c53dfb5db0c34')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7964953825:AAGhw1ImVt6f8a6bz3GdbtFS9uNTdMNpDm4')
+ADMINS = [int(1271489541) if id_pattern.search(1271489541) else admin for admin in environ.get('1271489541', '').split()]
+USERNAME = environ.get('USERNAME', '@Shubhamhere87')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "-1001806038680")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002439501849'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
